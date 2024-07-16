@@ -14,7 +14,7 @@
  */
 //I:string
 //O:length property of the input string
-//C:
+//C:return
 //E:N/A
 
 
@@ -32,8 +32,8 @@ function length(string) {
  */
 //i:string
 //o:should return lowercase version of string
-//c:
-//e:
+//c:new string to lowercase
+//e:n/a
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
    return string.toLowerCase();
@@ -47,8 +47,8 @@ function toLowerCase(string) {
  */
 //i:string
 //o:should return uppercase version of string
-//c:
-//e:
+//c:return a new string
+//e:n/a
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
     return string.toUpperCase();
@@ -75,7 +75,7 @@ function toUpperCase(string) {
 //i:use the toDashCase datatype
 //o:should return a dased string
 //c:retrn new string to forced dash case
-//e:
+//e:n/a
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
     return string.toLowerCase().replace(/\s+/g, '-');
@@ -98,15 +98,23 @@ function toDashCase(string) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
-//i:
-//o:
+//i:string
+//o:true if string begins with character, false otherwise
 //c:
-//e:
+//e:n/a
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
+    // Check if input string is empty
+     if (string.length === 0) {
+        return false;
+    }
     
-
+    // Convert both the first character of string and char to lowercase
+    let firstCharLower = string.charAt(0).toLowerCase();
+    let charLower = char.toLowerCase();
+    
+    // Compare the characters
+    return firstCharLower === charLower;
     // YOUR CODE ABOVE HERE //
 }
 
@@ -122,8 +130,23 @@ function beginsWith(string, char) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+//i:string
+//o:true if the string ends with the character, false otherwise
+//c:
+//e:n/a
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
+     // Check if input sring is empty
+     if (string.length === 0) {
+        return false;
+    }
+    
+    // Convert both the last character of string and char to lowercase
+    let lastCharLower = string.charAt(string.length - 1).toLowerCase();
+    let charLower = char.toLowerCase();
+    
+    // Compare the characters
+    return lastCharLower === charLower;
 
 
 
@@ -135,9 +158,9 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
-//i:
-//o:
-//c:
+//i:strings
+//o:return the two input stings concatenated
+//c:concatenate into one
 //e:
 
 function concat(stringOne, stringTwo) {
@@ -162,8 +185,7 @@ function concat(stringOne, stringTwo) {
  */
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    var args = Array.from(arguments);
-
+    
 
     // YOUR CODE ABOVE HERE //
 }
@@ -177,11 +199,18 @@ function join(stringOne, stringTwo) {
  *
  * TIP: What property of the String do we need to compare?
  */
+//i:strings
+//o:return the longest of the two
+//c:
+//e:
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
+    //compare the lengths of stringOne and stringTwo
+    if (stringOne.length >= stringTwo.length) {
+        return stringOne;
+    } else {
+        return stringTwo;
+    }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -192,6 +221,10 @@ function longest(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+//i:strings
+//o:return -1 if the second is higher in order than the first, and return 0 if equal
+//c:
+//e:n/a
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
@@ -212,8 +245,7 @@ function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
 
-
-
+    
     // YOUR CODE ABOVE HERE //
 }
 
