@@ -72,8 +72,14 @@ function toUpperCase(string) {
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
+//i:use the toDashCase datatype
+//o:should return a dased string
+//c:retrn new string to forced dash case
+//e:
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
+    return string.toLowerCase().replace(/\s+/g, '-');
+    //change the string to lowercase and replace spaces with dashes
 
 
 

@@ -15,13 +15,16 @@
 /** 
  * Given an input value, print the value to the screen using console.log().
  */
-
+//i:print
+//o:should return undefined
+//c:print the value to the console
+//e:N/A
 
 
 function print(value) {
   // YOUR CODE BELOW HERE //
   console.log(value);
-  
+  //log the given value
 
   
   // YOUR CODE ABOVE HERE //
