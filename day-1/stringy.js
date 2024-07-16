@@ -158,17 +158,14 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
-//i:strings
-//o:return the two input stings concatenated
-//c:concatenate into one
-//e:
-
+//i:string
+//o:strings concatenated into one
+//c:
+//e:n/a
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     //concatenate both strings using the + operator
     return stringOne + stringTwo;
-
-
 
     // YOUR CODE ABOVE HERE //
 }
@@ -245,7 +242,7 @@ function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
 
-    
+
     // YOUR CODE ABOVE HERE //
 }
 
