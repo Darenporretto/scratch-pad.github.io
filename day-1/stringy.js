@@ -180,8 +180,15 @@ function concat(stringOne, stringTwo) {
  * TIP: This Function pulls out all the arguments passed to it and stores them
  *      in an Array called args.
  */
+//i:strings
+//o: all strings joined together
+//c: use the argsArray
+//e:n/a
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+    // Convert the arguments object to an array and join all elements into a single string
+    let argsArray = Array.from(arguments);
+    return argsArray.join('');
     
 
     // YOUR CODE ABOVE HERE //
@@ -198,8 +205,8 @@ function join(stringOne, stringTwo) {
  */
 //i:strings
 //o:return the longest of the two
-//c:
-//e:
+//c:return the longer string
+//e:n/a
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     //compare the lengths of stringOne and stringTwo
@@ -219,14 +226,23 @@ function longest(stringOne, stringTwo) {
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
 //i:strings
-//o:return -1 if the second is higher in order than the first, and return 0 if equal
-//c:
+//o:should return 0 to be equal
+//c:put in abc order ascending
 //e:n/a
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
+        // Use localeCompare to compare the strings in abc order
+        let comparisonResult = stringOne.localeCompare(stringTwo);
+    
+        // Return comparison result
+        if (comparisonResult < 0) {
+            return 1; 
+        } else if (comparisonResult > 0) {
+            return -1; 
+        } else {
+            return 0; //returns to be equal
+        }
+  
     // YOUR CODE ABOVE HERE //
 }
 
@@ -238,10 +254,23 @@ function sortAscending(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+//i:strings
+//o:return equal
+//c:put in abc order descending
+//e:
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
+     // Use localeCompare to compare strings alphabetically
+     let comparisonResult = stringTwo.localeCompare(stringOne); 
+    
+     // Return the comparison result
+     if (comparisonResult > 0) {
+         return -1; 
+     } else if (comparisonResult < 0) {
+         return 1; 
+     } else {
+         return 0; //returns to be equal
+     }
 
     // YOUR CODE ABOVE HERE //
 }
