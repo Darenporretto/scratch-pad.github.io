@@ -105,8 +105,7 @@ function toDashCase(string) {
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
     //convert string and char to lowercase
-    let lowerCaseString = string.toLowerCase();
-    let lowerCaseChar = char.toLowerCase();
+
 
 
     
