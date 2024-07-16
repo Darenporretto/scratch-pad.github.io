@@ -135,8 +135,15 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+//i:
+//o:
+//c:
+//e:
+
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+    //concatenate both strings using the + operator
+    return stringOne + stringTwo;
 
 
 
