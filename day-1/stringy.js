@@ -45,8 +45,14 @@ function toLowerCase(string) {
 /**
  * Given an input String, return a new String forced to uppercase.
  */
+//i:string
+//o:should return uppercase version of string
+//c:
+//e:
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
+    return string.toUpperCase();
+    //return string forced to uppercase
 
 
 
