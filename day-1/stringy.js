@@ -104,9 +104,6 @@ function toDashCase(string) {
 //e:
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-    //convert string and char to lowercase
-
-
 
     
 
