@@ -20,6 +20,7 @@
 
 function print(value) {
   // YOUR CODE BELOW HERE //
+  console.log(value);
   
 
   
