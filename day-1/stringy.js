@@ -98,8 +98,18 @@ function toDashCase(string) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+//i:
+//o:
+//c:
+//e:
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
+    //convert string and char to lowercase
+    let lowerCaseString = string.toLowerCase();
+    let lowerCaseChar = char.toLowerCase();
+
+    //check if first char of string equals char
+    return lowerCaseString.charAt(0) === lowerCaseChar;
 
     
 
