@@ -29,12 +29,17 @@ function printArrayValues(array) {
  * Given an input Array, loop backwards over the Array and print its values 
  * using console.log().
  */
+//i:array
+//o:should return the arrays values in reverse order
+//c:loop backwards through the array and use the console
+//e:n/a
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
-  
-  
-  
-  
+  // Loop backwards through the array
+  for (let i = array.length - 1; i >= 0; i--) {
+    // Print each element using console.log
+    console.log(array[i]);
+}
   // YOUR CODE ABOVE HERE //
 }
 
