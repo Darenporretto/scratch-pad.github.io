@@ -108,8 +108,6 @@ function beginsWith(string, char) {
     let lowerCaseString = string.toLowerCase();
     let lowerCaseChar = char.toLowerCase();
 
-    //check if first char of string equals char
-    return lowerCaseString.charAt(0) === lowerCaseChar;
 
     
 
