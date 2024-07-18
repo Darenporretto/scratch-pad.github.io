@@ -21,11 +21,33 @@
  *  b. you'll need a loop, which one is best?
  *  c. you'll wanna make use of the push() method of Array.
  */
+//i:number
+//o:an array with all integers from startbto end..
+/*c:create something to collect the output you'll return,
+you'll need a loop, which one is best,
+you'll wanna make use of the .push() method of Array.
+*/
+//e:n/a
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
+     //create empty array to store the range
+     let result = [];
+
+     //determine the direction of the range
+     if (start <= end) {
+         // Generate range in ascending order
+         for (let i = start; i <= end; i++) {
+             result.push(i);
+         }
+     } else {
+         //generate range in descending order
+         for (let i = start; i >= end; i--) {
+             result.push(i);
+         }
+     }
+ 
+     //return the result array
+     return result;
     
     // YOUR CODE GOES ABOVE HERE //
 }
