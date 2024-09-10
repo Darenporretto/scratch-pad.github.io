@@ -30,29 +30,31 @@ function length(string) {
     // YOUR CODE ABOVE HERE //
 }
 /*
-I:
-O:
-C:
-E:
+I: function takes in a string
+O: returns a new string forced to lowercase
+C: N/A
+E: N/A
 */
 /**
  * Given an input String, return a new String forced to lowercase.
  */
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
-   
-
+    return string.toLowerCase();
     // YOUR CODE ABOVE HERE //
-}
-
+    }
 /**
  * Given an input String, return a new String forced to uppercase.
  */
+/*
+I: function takes in a string
+O: returns a new string forced to uppercase
+C: N/A
+E: N/A
+*/
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+    return string.toUpperCase();
     // YOUR CODE ABOVE HERE //
 }
 
@@ -69,11 +71,16 @@ function toUpperCase(string) {
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
+/*
+I: function takes in a string
+O: returns a new string forced to dash-case
+C: N/A
+E: N/A
+*/
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-
-
-
+    // convert the string to lowercase first then replace all spaces eith dashes
+    return string.toLowerCase().split(' ').join('-');
     // YOUR CODE ABOVE HERE //
 }
 
@@ -89,10 +96,16 @@ function toDashCase(string) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+/*
+I: function takes in to parameters a string and a character
+O: output true if string begins with char, false otherwise
+C: the function is case sensitive
+E: N/A
+*/
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-    
+    // convert string and char to be equally lowercase
+    return string.toLowerCase().charAt(0) === char.toLowerCase();
 
     // YOUR CODE ABOVE HERE //
 }

@@ -20,8 +20,8 @@
 
 function print(value) {
   // YOUR CODE BELOW HERE //
-  
-
+  // print the value to the console
+console.log(value);
   
   // YOUR CODE ABOVE HERE //
 }
