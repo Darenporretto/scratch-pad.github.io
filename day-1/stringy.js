@@ -122,9 +122,20 @@ function beginsWith(string, char) {
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
  */
+/*
+I: takes in a single char and input string
+O: true if if the string ends with the char false other wise
+C: function is case sensitive
+E: N/A
+*/
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
+    // convert strings and chars to lowercase
+    var lowerCaseString = string.toLowerCase();
+    var lowerCaseChar = char.toLowerCase();
 
+    //last char must match
+    return lowerCaseString.charAt(lowerCaseString.length - 1) === lowerCaseChar;
 
 
     // YOUR CODE ABOVE HERE //
@@ -135,9 +146,15 @@ function endsWith(string, char) {
  *
  * TIP: What's the operator to concatenate two Strings?
  */
+/*
+I: two strings
+O: strings concatenated into one
+C: n/a
+E: n/a
+*/
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+    return stringOne + stringTwo;
 
 
     // YOUR CODE ABOVE HERE //
@@ -153,9 +170,17 @@ function concat(stringOne, stringTwo) {
  * TIP: This Function pulls out all the arguments passed to it and stores them
  *      in an Array called args.
  */
+/*
+I: two strings
+O: joined strings
+C: n/a
+E: n/a
+*/
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
+    //join args into a single string
+    return args.join('');
 
 
     // YOUR CODE ABOVE HERE //
@@ -170,9 +195,16 @@ function join(stringOne, stringTwo) {
  *
  * TIP: What property of the String do we need to compare?
  */
+/*
+I: twop strings
+O: longest string
+C:n/a
+E:n/a
+*/
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+    // compare string lengths and return longer of the two
+    return stringOne.length >= stringTwo.length ? stringOne : stringTwo;
 
 
     // YOUR CODE ABOVE HERE //
@@ -185,11 +217,22 @@ function longest(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+/*
+I: two strings
+O: 1 if first is greater. -1 if secomnd is greater. 0 if not equal
+C:n/a
+E:n/a
+*/
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
+    // compare the 2 strings alphabetically
+    if (stringOne < stringTwo) {
+        return 1;
+    } else if (stringOne > stringTwo) {
+        return -1;
+    } else {
+        return 0;
+    }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -201,9 +244,22 @@ function sortAscending(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+/*
+I: two strings
+O: 1 if first is lower. -1 if second is lower. 0 if not equal
+C:n/a
+E:n/a
+*/
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+    // compare the 2 strings alphabetically
+    if (stringOne > stringTwo) {
+        return 1;
+    } else if (stringOne < stringTwo) {
+        return -1;
+    } else {
+        return 0;
+    }
 
 
 
