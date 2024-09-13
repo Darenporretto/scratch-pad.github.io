@@ -27,12 +27,17 @@ function createGreaterThanFilter(base) {
  * base. (test means return true or false)
  * 
  */
+/*
+I: function takes in an input base that should be a string or number
+O: return a function that tests whether a given value is less than the base
+C: return true or false
+E: n/a
+*/
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
-  
-    
-    
+    return function(value) {
+        return value < base;
+    } 
     // YOUR CODE ABOVE HERE //
 }
 
@@ -43,12 +48,20 @@ function createLessThanFilter(base) {
  * 
  * This function needs to be case insensitive.
  */
+/*
+I: startsWith character, which will be a single character
+O: return a Function that tests whether a given String starts with the startsWith character.
+C: needs to be case insensitive
+E: n/a
+*/
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    var toLowerCase = startsWith.toLowerCase();
+    // return a function to check if given string stsrts with the char
+    return function(str) {
+        // change input string to lower case
+        return str.toLowerCase().startsWith(toLowerCase);
+    };
     // YOUR CODE ABOVE HERE //
 }
 
@@ -61,10 +74,12 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    var toLowerCase = endsWith.toLowerCase();
+    // return a function to check if given string ends with the char
+    return function(str) {
+        // change input string to lower case
+        return str.toLowerCase().endsWith(toLowerCase);
+    };
     // YOUR CODE ABOVE HERE //
 }
 
@@ -75,10 +90,16 @@ function createEndsWithFilter(endsWith) {
  * TIP: You need to loop over the Strings, right? We need to pass each String to 
  * the modify Function, but we need to collect the results into some collection.
  */
+/*
+I: Given an Array of Strings and a Function designed to modify a String
+O: return the Array of the Strings, modified
+C:
+E:
+*/
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
-    
-    
+    //use map to use on modify function to every string in array
+    return strings.map(modify);
     
     
     // YOUR CODE ABOVE HERE //
@@ -96,12 +117,18 @@ function modifyStrings(strings, modify) {
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
  */
+/*
+I: an Array of Strings and a Test Function
+O: return a Boolean on whether it passed, return true if ALL Strings pass the test.
+C:
+E:
+*/
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    // the every() method of Array instances tests whether all elements in the array 
+    //pass the test implemented by the provided function. 
+    // it returns a Boolean value.
+    return strings.every(test);
     // YOUR CODE ABOVE HERE //
 }
 
