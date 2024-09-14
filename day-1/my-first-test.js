@@ -14,6 +14,10 @@
 
 /** 
  * Given an input value, print the value to the screen using console.log().
+ * I: function takes an input value
+ * O: log
+ * C: print the value to the screen using console.log().
+ * E: n/a
  */
 
 
