@@ -21,10 +21,31 @@
  *  b. you'll need a loop, which one is best?
  *  c. you'll wanna make use of the push() method of Array.
  */
+/*
+I: function called range that takes two integers as parameters
+O: returns an Array containing all integers between the two parameters, inclusively
+C: n/a
+E: n/a
+*/
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
+    // create an empty array to hold the result
+    var result =[];
+
+    //checking to see if an ascending  or descending order is needed
+    if (start <= end) {
+        //ascending 
+        for (let i = start; i <= end; i++) {
+            result.push(i);
+        }
+    } else {
+        // descending
+        for ( let i = start; i >= end; i--) {
+            result.push(i);
+        }
+    }
+    //return the resulting array
+    return result;
     
     
     // YOUR CODE GOES ABOVE HERE //
