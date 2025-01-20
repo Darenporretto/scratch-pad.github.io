@@ -188,15 +188,19 @@ function concat(stringOne, stringTwo) {
  *      in an Array called args.
  */
 /*
-I: 
-O: 
-C:
-E:
+I: Function can take in any number of strings. 
+O: Function returns all of the joined together. 
+C: Function uses the join method. 
+E: Function pulls out all arguments passed and stores them in the args array.
 */
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-    var args = Array.from(arguments);
 
+    // This Function pulls out all the arguments passed to it and stores them in an Array called args
+    var args = Array.from(arguments);
+    
+    // Return the concatenated strings using the join method and an empty string
+    return args.join('');
 
     // YOUR CODE ABOVE HERE //
 }
