@@ -16,7 +16,7 @@
 /*
 I: Function takes in a string.
 O: Function returns a number of the length of the input string.
-C:
+C: 
 E:
 */
 function length(string) {
@@ -34,14 +34,16 @@ function length(string) {
  * Given an input String, return a new String forced to lowercase.
  */
 /*
-I: 
-O: 
+I: Function takes in an input string.
+O: Function returns a new string forced to lowercase
 C:
 E:
 */
 function toLowerCase(string) {
     // YOUR CODE BELOW HERE //
    
+    // Return the input string forced to lowercase
+    return string.toLowerCase();
 
     // YOUR CODE ABOVE HERE //
 }
