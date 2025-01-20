@@ -118,12 +118,11 @@ E:
 */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
+
     // Use the charAt method to the first character of the string 
     return string.charAt(0).toLowerCase() === char.toLowerCase();
     // Convert first character of the string and goven charcter to lowercase
     // Compare versions for equality using ===
-
-    
 
     // YOUR CODE ABOVE HERE //
 }
@@ -149,7 +148,11 @@ E:
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
 
-
+    // Convert both string and character to lowercase
+    const lowerStr = string.toLowerCase();
+    const lowerChar = char.toLowerCase();
+    // Use th endsWith method to check if the last character of the lowercase string matches the lowercase character
+    return lowerStr.endsWith(lowerChar);
 
     // YOUR CODE ABOVE HERE //
 }
