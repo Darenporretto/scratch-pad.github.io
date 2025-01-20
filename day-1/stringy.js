@@ -241,13 +241,22 @@ function longest(stringOne, stringTwo) {
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
 /*
-I: 
-O: 
+I: Function takes in two strings. 
+O: Functions return will depend on alphabetical order. 
 C:
 E:
 */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+
+    // Comparison with the '>,<' operators to compare strngs alphabetically
+    if (stringOne < stringTwo) {
+        return 1; // If first string is higher alphabetically
+    } else if (stringOne > stringTwo){
+        return -1; // If second string is higher alphabetically
+    } else {
+        return 0; //If equal
+    }
 
     // YOUR CODE ABOVE HERE //
 }
