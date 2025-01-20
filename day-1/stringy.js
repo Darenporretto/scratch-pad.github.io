@@ -163,15 +163,16 @@ function endsWith(string, char) {
  * TIP: What's the operator to concatenate two Strings?
  */
 /*
-I: 
-O: 
+I: Function takes in two strings.
+O: Function will return the strings concatenated.
 C:
-E:
+E: Use the correct operator '+' in order to concatenate the two input strings. 
 */
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
+    
+    // Concatenate both input strings using th '+' operator
+    return stringOne + stringTwo;
 
     // YOUR CODE ABOVE HERE //
 }
