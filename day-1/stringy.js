@@ -215,15 +215,20 @@ function join(stringOne, stringTwo) {
  * TIP: What property of the String do we need to compare?
  */
 /*
-I: 
-O: 
+I: Function takes in two strings.
+O: Function should return the longest string. 
 C:
 E:
 */
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
 
-
+    // Use the .length method with an if else statement to return the longer string
+    if (stringOne.length > stringTwo.length) {
+        return stringOne;
+    } else {
+        return stringTwo;
+    }
 
     // YOUR CODE ABOVE HERE //
 }
