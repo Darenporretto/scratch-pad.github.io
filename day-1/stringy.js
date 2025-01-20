@@ -35,7 +35,7 @@ function length(string) {
  */
 /*
 I: Function takes in an input string.
-O: Function returns a new string forced to lowercase
+O: Function returns a new string forced to lowercase.
 C:
 E:
 */
@@ -52,15 +52,16 @@ function toLowerCase(string) {
  * Given an input String, return a new String forced to uppercase.
  */
 /*
-I: 
-O: 
+I: Function takes in an input string.
+O: Function will return a new String forced to uppercase.
 C:
 E:
 */
 function toUpperCase(string) {
     // YOUR CODE BELOW HERE //
 
-
+    // Return the input string forced to uppercase. 
+    return string.toUpperCase();
 
     // YOUR CODE ABOVE HERE //
 }
@@ -79,13 +80,18 @@ function toUpperCase(string) {
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  */
 /*
-I: 
-O: 
+I: Function takes in an input string.
+O: Function will return a new String forced to dash-case.
 C:
 E:
 */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
+
+    // Return the input string forced to dash-case
+    return string.replace(/([a-z])([A-Z])/g, "$1-$2") // Replace camelcase with dashes
+    .replace(/[_\s]+/g, '-') // Replace underscores and spaces with dashes
+    .toLowerCase(); // Force to lowercase
 
 
 
@@ -105,13 +111,17 @@ function toDashCase(string) {
  *      ensure uppercase and lowercase can be compared equally?
  */
 /*
-I: 
-O: 
-C:
+I: Function takes in a string and a single character.
+O: Function returns true if string begins with character, false otherwise.
+C: Function is case insensitive. 
 E:
 */
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
+    // Use the charAt method to the first character of the string 
+    return string.charAt(0).toLowerCase() === char.toLowerCase();
+    // Convert first character of the string and goven charcter to lowercase
+    // Compare versions for equality using ===
 
     
 
@@ -131,9 +141,9 @@ function beginsWith(string, char) {
  *      ensure uppercase and lowercase can be compared equally?
  */
 /*
-I: 
-O: 
-C:
+I: Function takes in a String and a single character.
+O: Function returns true if the String ends with the character, false otherwise.
+C: Function is case insensitive. 
 E:
 */
 function endsWith(string, char) {
