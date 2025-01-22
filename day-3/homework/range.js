@@ -21,9 +21,32 @@
  *  b. you'll need a loop, which one is best?
  *  c. you'll wanna make use of the push() method of Array.
  */
+/*
+I: Function takes in two integers as parameters. 
+O: Function returns an Array containing all integers between the two parameters, inclusively.
+C: Function will need a loop. 
+E: Function will need to use the push method. 
+*/
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
-    
+    // Initialize empty array that will contain results
+    let result = [];
+
+    // Make sure start is < or > end
+    if (start <= end) {
+        // Loop to get numbers from strat to end inclusive
+        for (let i = start; i <= end; i++) {
+            result.push(i);
+        }  
+    } else {
+        // Loop through to get numbers start. to end in reverse order
+        for (let i = start; i >= end; i--) {
+            result.push(i);
+        }
+    }
+
+    // Return the array with the range of integers
+    return result;
     
     
     
