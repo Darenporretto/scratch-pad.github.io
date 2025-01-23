@@ -35,7 +35,23 @@
 
 function greeter(hour) {
     // YOUR CODE BELOW HERE //
-    
+    // If the Good Morning! hours (0-11) are in range print that to the console
+    if (hour >= 0 && hour <= 11) {
+        console.log('Good Morning!');
+    }
+    // Else if the Good Afternoon! hours (12-16) are in range print that to the console
+    else if (hour >= 12 && hour <= 16) {
+        console.log('Good Afternoon!');
+    }
+    // Else if the Good Evening! hours (17-21) are in ranfe print that to the console
+    else if (hour >= 17 && hour <= 21) {
+        console.log('Good Evening!');
+    }
+    // Else the Good Night! hours are in range (22-24) print that to the console
+    else {
+        console.log('Good Night!');
+    }
+
     
     
     
