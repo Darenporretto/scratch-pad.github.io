@@ -32,64 +32,57 @@
  *          WARNING: To pass this test, the LAST full name should have NO
  *          new-line character added after it!
  */
-/*
-I: Function called makeContact(id, nameFirst, nameLast) 
-O: returns a contact object
-C:
-E:
-*/
+
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
-    // return an object with the provided parameters
-    return{
+    // Factory function to return an object (contact) with the provided parameters
+    return {
         id: id,
         nameFirst: nameFirst,
         nameLast: nameLast
     };
 } 
 
-
-
 function makeContactList() {
     /*
      * You need something here to hold contacts. See length api for a hint:
      */
-    // new array to hold contacts
+    // Initialize a new array to hold contacts
     var contacts = [];
     
     return {
         // we implemented the length api for you 
-        //returns the number of contacts
+        // Returns the number of contacts
        length: function() {
         return contacts.length;
        },
 
-       // adds a contact to the list
+       // Adds a contact to the list using the .push() method
        addContact: function(contact) {
         contacts.push(contact);
        },
 
-       // find a contact by fulll name
+       // Find a contact by fulll name
        findContact: function(fullName) {
-        // use split to seperate full name from first and last
+        // Use .split() method to seperate full name from first and last
         var [firstName, lastName] = fullName.split(' ');
 
-        // search contacts with matching names first and last
+        // Search  for contacts with matching names first and last
         return contacts.find(contact => contact.nameFirst === firstName && contact.nameLast === lastName);
        },
 
-       // remove a contact from the list
+       // Remove a contact from the list
        removeContact: function(contact) {
-        // search for index of contact to remove
+        // Search for index of contact to remove
         var index = contacts.indexOf(contact);
 
-        // if contact exsits in array. remove it
+        // If contact exsits in array. Remove it using the .splice() method
         if (index !== -1) {
             contacts.splice(index, 1);
         }
        },
 
-       // print each contact on new line
+       // Print each contact in the list using the .map() method and object literals
        printAllContactNames: function() {
         return contacts.map(contact => `${contact.nameFirst} ${contact.nameLast}`).join('\n');
        }
